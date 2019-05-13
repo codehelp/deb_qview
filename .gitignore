@@ -1,1 +1,7 @@
 *.pro.user
+moc_*
+*.o
+ui_hellowindow.h
+hello
+.qmake.stash
+Makefile

@@ -8,6 +8,7 @@ HelloWindow::HelloWindow(QWidget *parent) :
     ui->setupUi(this);
     this->text_area = findChild<QTextEdit *>("textEdit");
     this->status = findChild<QStatusBar *>("statusBar");
+    this->status->showMessage(QString("Version: ") + QString(GIT_VERSION));
 }
 
 HelloWindow::~HelloWindow()
@@ -18,5 +19,4 @@ HelloWindow::~HelloWindow()
 void HelloWindow::on_spinBox_valueChanged(int value)
 {
     this->text_area->setText(QString::number(value));
-    this->status->showMessage(QString::number(value));
 }
