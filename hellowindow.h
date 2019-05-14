@@ -16,12 +16,8 @@ public:
     explicit HelloWindow(QWidget *parent = nullptr);
     ~HelloWindow();
 
-private slots:
-    void on_spinBox_valueChanged(int arg1);
-
 private:
     Ui::HelloWindow *ui;
-    QTextEdit * text_area;
     QStatusBar * status;
 };
 
