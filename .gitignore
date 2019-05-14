@@ -1,7 +1,7 @@
 *.pro.user
 moc_*
 *.o
-ui_hellowindow.h
+ui_*.h
 hello
 .qmake.stash
 Makefile
