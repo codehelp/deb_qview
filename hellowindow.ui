@@ -14,83 +14,15 @@
    <string>HelloWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QWidget" name="verticalLayoutWidget">
+   <widget class="QTreeView" name="treeView">
     <property name="geometry">
      <rect>
-      <x>9</x>
-      <y>9</y>
-      <width>281</width>
-      <height>381</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <widget class="QScrollArea" name="scrollArea">
-       <property name="widgetResizable">
-        <bool>true</bool>
-       </property>
-       <widget class="QWidget" name="scrollAreaWidgetContents">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>0</y>
-          <width>277</width>
-          <height>377</height>
-         </rect>
-        </property>
-        <widget class="QListWidget" name="fileviewer">
-         <property name="geometry">
-          <rect>
-           <x>10</x>
-           <y>10</y>
-           <width>256</width>
-           <height>351</height>
-          </rect>
-         </property>
-        </widget>
-       </widget>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="verticalLayoutWidget_2">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
+      <x>10</x>
       <y>10</y>
-      <width>311</width>
+      <width>256</width>
       <height>381</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout_2">
-     <item>
-      <widget class="QScrollArea" name="scrollArea_2">
-       <property name="widgetResizable">
-        <bool>true</bool>
-       </property>
-       <widget class="QWidget" name="scrollAreaWidgetContents_2">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>0</y>
-          <width>307</width>
-          <height>377</height>
-         </rect>
-        </property>
-        <widget class="QListWidget" name="contentList">
-         <property name="geometry">
-          <rect>
-           <x>10</x>
-           <y>10</y>
-           <width>281</width>
-           <height>351</height>
-          </rect>
-         </property>
-        </widget>
-       </widget>
-      </widget>
-     </item>
-    </layout>
    </widget>
   </widget>
   <widget class="QToolBar" name="mainToolBar">

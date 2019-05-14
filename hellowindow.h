@@ -2,7 +2,7 @@
 #define HELLOWINDOW_H
 
 #include <QMainWindow>
-#include <QTextEdit>
+#include <QTreeView>
 
 namespace Ui {
 class HelloWindow;
@@ -19,6 +19,7 @@ public:
 private:
     Ui::HelloWindow *ui;
     QStatusBar * status;
+    QTreeView * fileviewer;
 };
 
 #endif // HELLOWINDOW_H
