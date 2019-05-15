@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
-<comment>
+ <comment>
     This package is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation; either version 3 of the License, or
@@ -20,8 +20,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>426</width>
+    <height>191</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -30,8 +30,8 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>290</x>
-     <y>240</y>
+     <x>300</x>
+     <y>150</y>
      <width>80</width>
      <height>23</height>
     </rect>
@@ -43,8 +43,8 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>110</y>
+     <x>70</x>
+     <y>80</y>
      <width>281</width>
      <height>21</height>
     </rect>
@@ -56,15 +56,47 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>150</y>
+     <x>30</x>
+     <y>100</y>
      <width>381</width>
      <height>51</height>
     </rect>
    </property>
    <property name="text">
-    <string>Copyright 2006-2008 Neil Williams &lt;linux@codehelp.co.uk&gt;,
+    <string>Copyright 2006-2019 Neil Williams &lt;linux@codehelp.co.uk&gt;
 1994,1995 Ian Jackson &lt;ian@chiark.greenend.org.uk&gt;</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>30</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>deb-qview.xpm</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>40</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>deb_qview</string>
    </property>
   </widget>
   <action name="action_Close">

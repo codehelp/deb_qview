@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
-<comment>
+ <comment>
     This package is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation; either version 3 of the License, or
@@ -32,6 +32,10 @@
   </property>
   <property name="windowTitle">
    <string>deb-qview</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>deb-qview.xpm</normaloff>deb-qview.xpm</iconset>
   </property>
   <property name="windowOpacity">
    <double>-1.000000000000000</double>

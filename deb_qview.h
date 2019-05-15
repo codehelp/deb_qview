@@ -20,6 +20,7 @@
 #include <QMainWindow>
 #include <QTreeView>
 #include <QTextBrowser>
+#include <QStandardItemModel>
 
 namespace Ui {
 class deb_qview;
@@ -49,6 +50,7 @@ private:
     QStatusBar * status;
     QTreeView * fileviewer;
     QTextBrowser * contentviewer;
+    QStandardItemModel *deb_model;
 };
 
 #endif // HELLOWINDOW_H
