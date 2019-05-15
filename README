@@ -1,0 +1,20 @@
+Qt viewer for Debian package files.
+====================================
+
+deb-qview is designed for Debian developers,
+Debian applicants / sponsorees and the simply
+curious.
+
+By default, File|Open displays the list of
+packages in the apt cache:
+/var/cache/apt/archives/
+
+deb-qview also loads .deb files directly from the command line.
+This can be used  with file managers to open .deb files from a file
+viewer window. This is not enabled automatically.
+
+deb-qview can also load the .deb files listed in a .changes file, each
+in a new window.
+
+deb-gview will remain a .deb viewer rather
+than being extended to cope with any .tar.gz
