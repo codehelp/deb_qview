@@ -52,12 +52,6 @@ deb_qview::deb_qview(QWidget *parent) :
     this->deb_model->setHeaderData(1, Qt::Horizontal, QObject::tr("Size"));
     this->deb_model->setHeaderData(2, Qt::Horizontal, QObject::tr("Location"));
 
-    for( int r=0; r < 4; r++ ) {
-        QString sstr = "[ " + QString::number(r) + " ]";
-        QStandardItem *item = new QStandardItem(QString("Idx ") + sstr);
-        this->deb_model->setItem(r, 0, item);
-    }
-
     this->fileviewer->setModel(this->deb_model);
 }
 
@@ -66,15 +60,6 @@ deb_qview::~deb_qview() {
 }
 
 
-QVector<QStringList> splitTerms(const QStringList & source)
-{
-   QVector<QStringList> result;
-   result.reserve(source.count());
-   for (auto src : source)
-      result.append(src.split(QChar('*'), QString::SkipEmptyParts));
-   return result;
-}
-
 void deb_qview::on_action_New_triggered()
 {
     QString fileName = QFileDialog::getOpenFileName(
@@ -82,8 +67,7 @@ void deb_qview::on_action_New_triggered()
                 "/var/cache/apt/archives/",
                 tr("Package files (*.deb)"));
     QStandardItem *item = new QStandardItem(fileName);
-    this->deb_model->setItem(0, 0, item);
-    return;
+    this->deb_model->setItem(0, 2, item);
 }
 
 void deb_qview::on_action_Open_triggered()
@@ -93,8 +77,7 @@ void deb_qview::on_action_Open_triggered()
                 "/var/cache/apt/archives/",
                 tr("Package files (*.deb)"));
     QStandardItem *item = new QStandardItem(fileName);
-    this->deb_model->setItem(0, 0, item);
-    return;
+    this->deb_model->setItem(0, 2, item);
 }
 
 void deb_qview::on_action_Close_triggered()
