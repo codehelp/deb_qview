@@ -51,6 +51,7 @@ private:
     QTreeView * fileviewer;
     QTextBrowser * contentviewer;
     QStandardItemModel *deb_model;
+    void new_archive(void);
 };
 
 #endif // HELLOWINDOW_H

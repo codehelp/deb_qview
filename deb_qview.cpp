@@ -59,25 +59,29 @@ deb_qview::~deb_qview() {
     delete ui;
 }
 
-
-void deb_qview::on_action_New_triggered()
-{
+void deb_qview::new_archive(void) {
     QString fileName = QFileDialog::getOpenFileName(
                 this, tr("Open Archive"),
                 "/var/cache/apt/archives/",
-                tr("Package files (*.deb)"));
-    QStandardItem *item = new QStandardItem(fileName);
-    this->deb_model->setItem(0, 2, item);
+                tr("Debian package files (*.deb)"));
+    if (fileName == "") return;
+    QStandardItem * name = new QStandardItem(QString("name"));
+    QStandardItem * size = new QStandardItem(QString("size"));
+    QStandardItem * location = new QStandardItem(fileName);
+    this->deb_model->setItem(0, 0, name);
+    this->deb_model->setItem(0, 1, size);
+    this->deb_model->setItem(0, 2, location);
+}
+
+
+void deb_qview::on_action_New_triggered()
+{
+    this->new_archive ();
 }
 
 void deb_qview::on_action_Open_triggered()
 {
-    QString fileName = QFileDialog::getOpenFileName(
-                this, tr("Open Archive"),
-                "/var/cache/apt/archives/",
-                tr("Package files (*.deb)"));
-    QStandardItem *item = new QStandardItem(fileName);
-    this->deb_model->setItem(0, 2, item);
+    this->new_archive ();
 }
 
 void deb_qview::on_action_Close_triggered()
