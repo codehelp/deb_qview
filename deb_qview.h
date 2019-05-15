@@ -1,5 +1,5 @@
-#ifndef HELLOWINDOW_H
-#define HELLOWINDOW_H
+#ifndef DEB_QVIEW_H
+#define DEB_QVIEW_H
 
 #include <QApplication>
 #include <QMainWindow>
@@ -7,16 +7,16 @@
 #include <QTextBrowser>
 
 namespace Ui {
-class HelloWindow;
+class deb_qview;
 }
 
-class HelloWindow : public QMainWindow
+class deb_qview : public QMainWindow
 {
     Q_OBJECT
     bool changed;
 public:
-    explicit HelloWindow(QWidget *parent = nullptr);
-    ~HelloWindow();
+    explicit deb_qview(QWidget *parent = nullptr);
+    ~deb_qview();
 
 private slots:
     void on_action_New_triggered();
@@ -28,7 +28,7 @@ private slots:
     void on_action_Help_triggered();
 
 private:
-    Ui::HelloWindow *ui;
+    Ui::deb_qview *ui;
     QStatusBar * status;
     QTreeView * fileviewer;
     QTextBrowser * contentviewer;

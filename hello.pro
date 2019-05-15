@@ -29,16 +29,16 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        hellowindow.cpp \
-    aboutdialog.cpp
+    aboutdialog.cpp \
+    deb_qview.cpp
 
 HEADERS += \
-        hellowindow.h \
-    aboutdialog.h
+    aboutdialog.h \
+    deb_qview.h
 
 FORMS += \
-        hellowindow.ui \
-    aboutdialog.ui
+    aboutdialog.ui \
+    deb_qview.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

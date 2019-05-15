@@ -1,10 +1,10 @@
 #include <QStandardItemModel>
-#include "hellowindow.h"
+#include "deb_qview.h"
 #include "ui_hellowindow.h"
 
-HelloWindow::HelloWindow(QWidget *parent) :
+deb_qview::deb_qview(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::HelloWindow) {
+    ui(new Ui::deb_qview) {
 
     ui->setupUi(this);
     this->status = findChild<QStatusBar *>("statusBar");
@@ -41,26 +41,26 @@ HelloWindow::HelloWindow(QWidget *parent) :
     this->fileviewer->setModel(model);
 }
 
-HelloWindow::~HelloWindow() {
+deb_qview::~deb_qview() {
     delete ui;
 }
 
-void HelloWindow::on_action_New_triggered()
+void deb_qview::on_action_New_triggered()
 {
     return;
 }
 
-void HelloWindow::on_action_Open_triggered()
+void deb_qview::on_action_Open_triggered()
 {
     return;
 }
 
-void HelloWindow::on_action_Close_triggered()
+void deb_qview::on_action_Close_triggered()
 {
     QApplication::quit ();
 }
 
-void HelloWindow::on_action_Help_triggered()
+void deb_qview::on_action_Help_triggered()
 {
     return;
 }
