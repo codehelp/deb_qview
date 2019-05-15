@@ -15,6 +15,6 @@ AboutDialog::~AboutDialog()
 
 void AboutDialog::on_pushButton_clicked()
 {
-    // TODO: close this dialog
+    close ();
     return;
 }

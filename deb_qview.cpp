@@ -1,6 +1,9 @@
 #include <QStandardItemModel>
 #include "deb_qview.h"
 #include "ui_deb_qview.h"
+#include "aboutdialog.h"
+#include "ui_aboutdialog.h"
+
 
 deb_qview::deb_qview(QWidget *parent) :
     QMainWindow(parent),
@@ -63,4 +66,10 @@ void deb_qview::on_action_Close_triggered()
 void deb_qview::on_action_Help_triggered()
 {
     return;
+}
+
+void deb_qview::on_action_About_triggered()
+{
+    AboutDialog * about = new AboutDialog(this);
+    about->show ();
 }

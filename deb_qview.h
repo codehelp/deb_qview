@@ -27,6 +27,8 @@ private slots:
 
     void on_action_Help_triggered();
 
+    void on_action_About_triggered();
+
 private:
     Ui::deb_qview *ui;
     QStatusBar * status;
