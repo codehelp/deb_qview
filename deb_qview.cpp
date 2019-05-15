@@ -1,6 +1,6 @@
 #include <QStandardItemModel>
 #include "deb_qview.h"
-#include "ui_hellowindow.h"
+#include "ui_deb_qview.h"
 
 deb_qview::deb_qview(QWidget *parent) :
     QMainWindow(parent),

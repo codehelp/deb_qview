@@ -2,6 +2,6 @@
 moc_*
 *.o
 ui_*.h
-hello
+deb_qview
 .qmake.stash
 Makefile
